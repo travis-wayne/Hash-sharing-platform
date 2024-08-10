@@ -1,0 +1,121 @@
+<%- include ("includes/header") %>
+
+<div id="homeApp" style="margin-bottom: 80px;">
+    <div class="container" id="features">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>File Transfer Web App</h1>
+                <p>Node JS and Mongo DB</p>
+
+                <a v-bind:href="mainURL + '/MyUploads'">Get Started</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <img v-bind:src="mainURL + '/public/img/GetStarted.PNG'" />
+                    </div>
+
+                    <div class="card-body">
+                        <h4>Get Started</h4>
+                        <p>By clicking on get started you will directed towards for entering email and Password for login.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <img v-bind:src="mainURL + '/public/img/MyUpload.PNG'" />
+                    </div>
+
+                    <div class="card-body">
+                        <h4>My upload</h4>
+                        <p>We can uplad the file by using My Upoad and able to download the file .For sharing the file link is created and can also dete the file by clicking on delete.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <img v-bind:src="mainURL + '/public/img/MySharedLink.PNG'"  />
+                    </div>
+
+                    <div class="card-body">
+                        <h4>My Shared Link</h4>
+                        <p>The file whose link is created will be shown here and can also able to delete the link.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <img v-bind:src="mainURL + '/public/img/Register.PNG'" />
+                    </div>
+
+                    <div class="card-body">
+                        <h4>Register</h4>
+                        <p>We can register the application for that User Name ,Email,and Password is essential.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <img v-bind:src="mainURL + '/public/img/Login.JPG'" />
+                    </div>
+
+                    <div class="card-body">
+                        <h4>Login</h4>
+                        <p>For login earlier entered Email and Password need to be entered.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <img v-bind:src="mainURL + '/public/img/Logout.PNG'" />
+                    </div>
+
+                    <div class="card-body">
+                        <h4>Logout</h4>
+                        <p>Can logout by clicking on username tab and then logout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="container-fluid" id="counterContainer">
+        <div class="container">
+            
+            </div>
+        </div>
+    </div>
+
+
+    
+</div>
+
+<script>
+    const homeApp = Vue.createApp({
+        data() {
+            return {
+                mainURL: baseUrl,
+            }
+        }
+    });
+    homeApp.mount("#homeApp");
+</script>
+
+<%- include ("includes/footer") %>
